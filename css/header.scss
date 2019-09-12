@@ -1,0 +1,92 @@
+header {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1170px;
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        .img {
+            display: block;
+            margin: auto 0;
+        }
+        .logo {
+            width: 135px;
+        }
+        .menu {
+            display: none;
+            a {
+                margin: 5px 10px;
+                text-decoration: none;
+                color: #000;
+                &:hover {
+                    color: gold;
+                }
+                &:active {
+                    color: orange;
+                }
+            }
+        }
+        .user {
+            display: none;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: right;
+            p {
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+            .user-icon {
+                height: 40px;
+                border-radius: 100%;
+                margin: 0 15px;
+            }
+            .user-info {
+                display: flex;
+                flex-direction: column;
+            }
+            .sign-out-icon {
+                height: 20px;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.6;
+                }
+            }
+        }
+        .menu-icon {
+            height: 20px;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+      .container {
+        .menu {
+          display: flex;
+        }
+        .user {
+            display: flex;
+        }
+        .menu-icon {
+            display: none;
+        }
+      }
+    }
+  }

@@ -1,0 +1,405 @@
+main {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+
+    p, .p1, .p2, h1, h2, h3, h4, h5 {
+        display: block;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    h3 {
+        margin-bottom: 10px;
+    }
+
+// ---------------------- intro -----------------------------
+
+    .intro {
+        background: url('../images/main/banner/bg-480.jpg') no-repeat center;
+        background-size: cover;
+        color: #fff;
+    }
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+        overflow: hidden;
+        .intro-content {
+            max-width: 570px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            h1 {
+                font-size: 31px;
+                margin-bottom: 20px;
+                line-height: 31px;
+            }
+            p {
+                color: #fff;
+                margin-bottom: 25px;
+            }
+            button {
+                width: 290px;
+                height: 40px;
+                font-size: 20px;
+                background-color: #ef6c00;;
+                margin: 20px auto 0 auto;
+                color:#fff;
+                border: 0;
+                outline: none;
+                border-radius: 5px;
+                &:hover {
+                    background: #d16105;
+                }
+                &:active {
+                    background: #994805;
+                }
+            }
+        }
+    }
+
+
+// ---------------------- about -----------------------------
+    .section-title {
+        text-align: center;
+        margin: 100px auto 30px;
+        font-size: 42px;
+    }
+    .about {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .about-img {
+            img {
+                width: 289px;
+                margin: 30px auto;
+            }
+        }
+        .about-content {
+            max-width: 720px;
+            text-align: center;
+            h3 {
+                display: block;
+                margin: 30px auto;
+            }
+            .p2:nth-of-type(2){
+                margin: 25px auto;
+            }
+            .sign-up-link {
+                display: block;
+                font-size: 26px;
+                text-decoration: none;
+                color: #ef6c00;
+                margin-top: 20px;
+            }
+        }
+    }
+
+// ---------------------- relationships -----------------------------
+
+
+    .relationships {
+        padding-top: 0;
+        .relationships-title {
+            max-width: 600px;
+            font-size: 32px;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            line-height: 31px;
+        }
+        .relationships-items {
+            display: flex;
+            box-sizing: border-box;
+            width: 100%;
+            text-align: center;
+            flex-wrap: wrap;
+            margin-bottom: 100px;
+            .relationships-item {
+                margin-right: 20px;
+                img {
+                    margin: 30px auto 10px auto;
+                    width: 88px;
+                    height: 99px;
+                }
+                h4 {
+                    margin: 15px auto;
+                }
+            }
+        }
+    }
+// ------------------------ requirements ---------------------
+
+    .requirements {
+        background: url('../images/main/requirements/req-bg-480.jpg') no-repeat center;
+        background-size: cover;
+        color: #fff;
+        .requirements-content {
+            display: flex;
+            padding-bottom: 100px;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            align-items: center;
+            
+            img {
+                margin-top: 30px;
+            }
+            .p1, .p2, .p3, .p {
+                color: #fff;
+                margin-top: 30px;
+                text-align: center;
+                max-width: 750px;
+                font-size: 20px;
+            }
+        }
+    }
+//----------------------- users -------------------------
+
+    .section-suptitle {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .users {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .users-item {
+            width: 330px;
+            display: flex;
+            margin: 60px 30px 0 0;
+            text-align: left;
+            .user-item__img {
+                width: 80px;
+                height: 80px;
+                flex: 0 0 80px;
+                margin-right: 20px;
+            }
+            .users-item__name {
+                font-size: 22px;
+            }
+            .users-item__info {
+                font-size: 16px;
+                color: grey;
+            }
+        }
+    }
+    .users-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        button {
+            width: 290px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .button-secondary {
+            border: 2px solid #ef6c00;
+            border-radius: 5px;
+            background: transparent;
+            color: #ef6c00;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+    }
+    
+// ----------------------------------------------------
+
+    .sign-up {
+        text-align: center;
+        h5 {
+          margin: 15px auto;
+          padding: 5px 0 30px 0;
+        }
+        form {
+          display: grid;
+          grid-template-rows: repeat(6, 55px);
+          grid-template-columns: 100%;
+          grid-row-gap: 36px;
+          max-width: 1170px;
+          box-sizing: border-box;
+          margin: 0 auto 0 auto;
+          input, select {
+            box-sizing: border-box;
+            border: solid 1px rgb(160, 160, 160);
+            outline: none;
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 18px;
+          }
+          input {
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0 auto;
+            &::placeholder {
+              font-size: 18px;
+              color: rgb(160, 160, 160);
+            }
+          }
+          select {
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0 auto;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: url('../img/main/registration/caret-down.png') no-repeat;
+            background-position: 96% 50%;
+            background-size: 18px 12px;
+          }
+    
+          .file {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+          }
+          #file {opacity: 0;}
+          .file-custom {
+            position: absolute;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            height: 100%;
+            width: 100%;
+            padding: 15px;
+            line-height: 22.5px;
+            color: #555;
+            font-size: 18px;
+            text-align: left;
+            background-color: #fff;
+            border: 1px solid rgb(160, 160, 160);
+            border-radius: 5px;
+            box-shadow: inset 0 0.2rem 0.4rem rgba(0,0,0,.05);
+            &::before {
+              position: absolute;
+              box-sizing: border-box;
+              top: -1px;
+              right: -1px;
+              z-index: 6;
+              display: block;
+              content: "Upload";
+              font-size: 20px;
+              text-align: center;
+              height: calc(100% + 2px);
+              width: 125px;
+              padding: 15px;
+              line-height: 22.5px;
+              color: orange;
+              background-color: #fff;
+              border: 2px solid orange;
+              border-radius: 0 5px 5px 0;
+            }
+            &::after {content: "Upload your photo";}
+          } //file-custom
+          button {
+            width: 290px;
+            height: 40px;
+            margin: 20px auto 0 auto;
+            font-size: 20px;
+            background: orange;
+            color: #fff;
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            &:hover { background: #ef8020;}
+            &:active { background: #ec903f;}
+          }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+    main {
+        .intro {
+            background-image: url('../images/bg/ban-bg-768.jpg');
+            .intro-content {
+                height: 700px;
+                text-align: left;
+                h1 {
+                    font-size: 50px;
+                    margin-bottom: 25px;
+                    line-height: 51px;
+                }
+                button {
+                    margin: 0;
+                }
+            }
+        }
+  
+      .requirements {
+        background-image: url('../images/bg/req-bg-768.jpg');
+      }
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    main {
+        .intro {
+            background-image: url('../images/main/banner/ban-bg-1200.jpg');
+        }
+        .about {
+            flex-wrap: nowrap;
+            text-align: left;
+            .about-content {text-align: left; margin: 0;}
+            .about-img {margin-right: 50px;}
+        }
+        .relationships {
+            .relationships-title {
+                font-size: 42px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                line-height: 51px;
+            } 
+            .relationships-items {
+                flex-wrap: nowrap;
+                text-align: left;
+            }
+        }
+        .requirements {
+            background-image: url('../images/bg/req-bg-1200.jpg');
+            .container img {
+              margin: auto;
+              margin-right: 15px;
+            }
+            .requirements-content {
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: nowrap;
+                .p1, .p2, .p3, .p {
+                    font-size: 16px;
+                    text-align: left;
+                }
+                img {
+                    margin-top: 30px;
+                    margin-left: 90px; 
+                    height: 272px;
+                }
+            }
+        }
+        .sign-up {
+            form {
+                grid-template-rows: repeat(3, 55px);
+                grid-template-columns: repeat(6, 1fr);
+                grid-column-gap: 18px;
+                grid-template-areas:
+                "name name email email phone phone"
+                "pos pos pos file file file"
+                "btn btn btn btn btn btn";
+                input[name="name"] {grid-area: name;}
+                input[name="email"] {grid-area: email;}
+                input[name="phone"] {grid-area: phone;}
+                #select-position {grid-area: pos;}
+                .file {grid-area: file;}
+                button {grid-area: btn;}
+            }
+        }
+    }
+  }

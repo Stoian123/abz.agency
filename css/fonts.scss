@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Overpass SemiBold 600';
+    src: url('../fonts/Overpass/Overpass-SemiBold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro Regular 400';
+    src: url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro Bold 700';
+    src: url('../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf');
+  }
+  
+  $p-font: 'Source Sans Pro Regular 400';
+  $h-font: 'Overpass SemiBold 600';
+  $btn-font: 'Source Sans Pro Bold 700';
+  
+  h1 {
+    font-family: $h-font;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+  }
+  
+  h2 {
+    font-family: $h-font;
+    font-size: 26px;
+    line-height: 31px;
+    margin: 0;
+  }
+  
+  h3, h4 {
+    font-family: $h-font;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  h5 {
+    font-family: $p-font;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+  
+  .p1, a {
+    font-family: $p-font;
+    font-size: 18px;
+    line-height: 26px;
+    color: #222;
+  }
+  
+  .p2 {
+    font-family: $p-font;
+    font-size: 16px;
+    line-height: 22px;
+    color: #444;
+  }
+  
+  .p3 {
+    font-family: $p-font;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+  }
